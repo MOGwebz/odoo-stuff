@@ -3,9 +3,9 @@
     <data>
         <template id="jil_inherited_quote_document" inherit_id="sale.report_saleorder_document">
             <xpath expr="//div[@class='page']" position="replace">
-                <div class="page">
+                <div class="page" style="background-image:url('/jilquote/static/img/jeep.jpg')">
                     <div class="oe_structure"/>
-
+                   
                     <div class="row">
                         <div class="col-xs-12" style="margin-left:15px;background-color:#CC3600;color:#FFFFFF">
 

@@ -9,7 +9,8 @@
                         <div class="col-xs-12" style="margin-left:15px;background-color:#CC3600;color:#FFFFFF">
 
                             <h2 style="margin-left:25px;margin-top:15px;">
-                                <span t-if="o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">Invoice</span>
+                                <span t-if="o.type == 'out_invoice' and o.tax_invoice == True and (o.state == 'open' or o.state == 'paid')">Tax</span>
+                                <span t-if="o.type == 'out_invoice' and (o.state == 'open' or o.state == 'paid')">Invoice</span>                                
                                 <span t-if="o.type == 'out_invoice' and o.state == 'proforma2'">PRO-FORMA</span>
                                 <span t-if="o.type == 'out_invoice' and o.state == 'draft'">Draft Invoice</span>
                                 <span t-if="o.type == 'out_invoice' and o.state == 'cancel'">Cancelled Invoice</span>

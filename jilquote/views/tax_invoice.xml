@@ -1,0 +1,13 @@
+<odoo>
+   <data>
+     <record id="jil_quote_form_view" model="ir.ui.view">
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="model">account.invoice</field>
+        <field name="arch" type="xml">
+            <field name="date_invoice" position="after">
+                <field name="tax_invoice"/>
+            </field>
+        </field>
+     </record>
+   </data>
+</odoo>
